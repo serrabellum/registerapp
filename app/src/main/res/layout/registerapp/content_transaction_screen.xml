@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_transaction_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.anne.transactionscreen.TransactionScreen"
+    tools:showIn="@layout/activity_transaction_screen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:id="@+id/Checkout"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Transaction Information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Checkout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/TransactionInformation"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:text="Transaction ID:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/TransactionID"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/TransactionInformation"
+        android:layout_alignRight="@+id/Checkout"
+        android:layout_alignEnd="@+id/Checkout"
+        android:layout_marginRight="71dp"
+        android:layout_marginEnd="71dp" />
+
+    <TextView
+        android:text="Employee ID:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/EmployeeID"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/TransactionID"
+        android:layout_alignRight="@+id/TransactionID"
+        android:layout_alignEnd="@+id/TransactionID" />
+
+    <TextView
+        android:text="Type of Transaction:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/TransactionType"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/EmployeeID"
+        android:layout_alignRight="@+id/EmployeeID"
+        android:layout_alignEnd="@+id/EmployeeID" />
+
+    <TextView
+        android:text="Date of Transaction:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:id="@+id/TransactionDate"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/TransactionType"
+        android:layout_alignLeft="@+id/TransactionType"
+        android:layout_alignStart="@+id/TransactionType" />
+
+    <TextView
+        android:text="Product Information:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ProductInfo"
+        android:layout_below="@+id/TransactionDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:text="Product ID:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/ProductID"
+        android:layout_below="@+id/ProductInfo"
+        android:layout_alignRight="@+id/ProductInfo"
+        android:layout_alignEnd="@+id/ProductInfo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:text="Quantity:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:id="@+id/Quantity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/ProductID"
+        android:layout_alignRight="@+id/ProductID"
+        android:layout_alignEnd="@+id/ProductID" />
+
+    <TextView
+        android:text="Cost:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:id="@+id/Cost"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/Quantity"
+        android:layout_alignRight="@+id/Quantity"
+        android:layout_alignEnd="@+id/Quantity" />
+
+    <TextView
+        android:text="Total:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:id="@+id/TotalCost"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_below="@+id/Cost"
+        android:layout_alignLeft="@+id/Cost"
+        android:layout_alignStart="@+id/Cost" />
+
+</RelativeLayout>
